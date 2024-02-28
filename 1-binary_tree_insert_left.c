@@ -4,6 +4,9 @@
 /**
  * binary_tree_insert_left - inserts a node as the left-child of another node
  *
+ * If parent already has a left-child, the new node must take its place,
+ * and the old left-child must be set as the left-child of the new node.
+ *
  * @parent: pointer to the node to insert the left-child in
  * @value: value to store in the new node
  *
