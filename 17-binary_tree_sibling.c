@@ -12,11 +12,11 @@
  */
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
-    binary_tree_t *parent;
+	binary_tree_t *parent;
 
-    parent = node->parent;
-    if (!node || !parent)
-        return (NULL);
+	parent = node->parent;
+	if (!node || !parent)
+		return (NULL);
 
-    return ((node == parent->left) ? parent->right : parent->left);
+	return ((node == parent->left) ? parent->right : parent->left);
 }
